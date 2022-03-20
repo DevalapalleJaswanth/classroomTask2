@@ -1,0 +1,32 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  color: black;
+  border-color: black;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.sale {
+  position: relative;
+  top: -310px;
+  left: 292px;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 1px 8px;
+  background-color: black;
+  color: white;
+}
