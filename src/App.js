@@ -82,6 +82,17 @@ export default function App() {
   return (
     <div>
       <MyMenu />
+      <div
+        style={{ backgroundColor: 'black', height: '200px', margin: '15px' }}
+        className="center"
+      >
+        <div style={{ textAlign: 'center' }}>
+          <h1 style={{ color: 'white' }}>Shop in style</h1>
+          <h3 style={{ color: 'grey', fontFamily: 'sans-serif' }}>
+            With this shop hompeage template
+          </h3>
+        </div>
+      </div>
       <Grid container spacing={15} className="center">
         {data.map((ele, i) => (
           <Grid item>
