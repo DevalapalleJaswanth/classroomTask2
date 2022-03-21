@@ -36,3 +36,54 @@ p {
   background-color: black;
   color: white;
 }
+.navbar {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containermenu {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.menu {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.menuIcon {
+  display: none;
+}
+@media (max-width: 800px) {
+  .menuIcon {
+    display: block;
+  }
+  .navbar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .menu {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .containermenu {
+    margin: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
