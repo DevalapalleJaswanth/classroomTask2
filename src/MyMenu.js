@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Accordion,
   AccordionSummary,
@@ -10,6 +10,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 export default function MyMenu(props) {
+  const [state, setState] = useState('unclicked');
   return (
     <>
       <div className="navbar">
@@ -18,13 +19,25 @@ export default function MyMenu(props) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            gap: '250px',
+            gap: '150px',
           }}
         >
           <h2> Start Bootstrap</h2>
-          <MenuIcon className="menuIcon" />
+          <MenuIcon
+            className="menuIcon"
+            onClick={() => {
+              if (state === 'unclicked') {
+                setState('clicked');
+              } else {
+                setState('unclicked');
+              }
+            }}
+          />
         </div>
-        <div className="containermenu">
+        <div
+          className="containermenu"
+          style={{ display: state === 'clicked' ? 'flex' : 'none' }}
+        >
           <div className="menu">
             <h3 style={{ marginBottom: '0px' }}>Home</h3>
             <h3 style={{ marginBottom: '0px' }}>About</h3>

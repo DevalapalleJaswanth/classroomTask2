@@ -59,7 +59,7 @@ p {
 .menuIcon {
   display: none;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .menuIcon {
     display: block;
   }
@@ -67,7 +67,7 @@ p {
     margin: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
   .menu {
