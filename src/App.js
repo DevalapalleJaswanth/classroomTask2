@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './style.css';
 import Card from './MyCard';
 import Grid from '@mui/material/Grid';
+import MyMenu from './MyMenu';
+
 export default function App() {
   const [data, setData] = useState([
     {
@@ -81,6 +83,7 @@ export default function App() {
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
+      <MyMenu />
       <Grid container spacing={15} className="center">
         {data.map((ele, i) => (
           <Grid item>
